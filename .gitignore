@@ -1,0 +1,10 @@
+data/raw/*.csv
+/data/plots
+/data/processed/speed.csv
+/data/processed/volume.csv
+/.vscode/*
+notebooks/sumo.err
+notebooks/sumo.log
+results/logs/*
+results/jsons/*
+results/plots/*

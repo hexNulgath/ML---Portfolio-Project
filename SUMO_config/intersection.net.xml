@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-01-01T16:30:39.084494-03:00 by Eclipse SUMO netedit 1.25.0
+<neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\macha\Downloads\ml traffic\intersection.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\macha\Downloads\ml traffic\intersection.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</neteditConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" avoidOverlap="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="-577607.40,3861442.15" convBoundary="-267.25,-193.74,234.12,201.31" origBoundary="-56.152461,-34.901217,-56.138475,-34.881992" projParameter="+proj=utm +zone=21 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <type id="highway.primary" priority="12" numLanes="5" speed="27.78" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" oneway="0"/>
+    <type id="highway.primary_link" priority="7" numLanes="1" speed="22.22" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" oneway="0"/>
+    <type id="highway.secondary" priority="11" numLanes="1" speed="27.78" disallow="tram rail_urban rail rail_electric rail_fast ship container cable_car subway aircraft wheelchair scooter drone" oneway="0"/>
+
+    <edge id=":intersection_0" function="internal">
+        <lane id=":intersection_0_0" index="0" speed="16.67" length="41.60" shape="-17.86,76.00 -50.16,49.18"/>
+        <lane id=":intersection_0_1" index="1" speed="16.67" length="41.60" shape="-16.20,73.25 -48.19,46.65"/>
+        <lane id=":intersection_0_2" index="2" speed="16.67" length="41.60" shape="-14.55,70.50 -46.23,44.13"/>
+    </edge>
+    <edge id=":intersection_3" function="internal">
+        <lane id=":intersection_3_0" index="0" speed="14.59" length="53.65" shape="-12.89,67.75 -16.71,59.06 -19.54,43.13 -20.73,26.38 -19.61,15.24"/>
+    </edge>
+    <edge id=":intersection_4" function="internal">
+        <lane id=":intersection_4_0" index="0" speed="8.90" length="39.06" shape="-12.89,67.75 -18.19,56.92 -17.71,49.46 -11.46,45.37 0.57,44.64"/>
+    </edge>
+    <edge id=":intersection_5" function="internal">
+        <lane id=":intersection_5_0" index="0" speed="14.59" length="49.52" shape="-11.24,65.00 -14.79,56.99 -17.19,42.44 -17.97,27.05 -16.67,16.53"/>
+    </edge>
+    <edge id=":intersection_6" function="internal">
+        <lane id=":intersection_6_0" index="0" speed="7.83" length="29.72" shape="-11.24,65.00 -15.39,56.82 -15.11,51.14 -10.40,47.96 -1.25,47.27"/>
+    </edge>
+    <edge id=":intersection_7" function="internal">
+        <lane id=":intersection_7_0" index="0" speed="12.50" length="60.45" shape="-4.31,20.74 -25.05,77.82"/>
+        <lane id=":intersection_7_1" index="1" speed="12.50" length="60.45" shape="-7.30,19.59 -27.80,76.17"/>
+    </edge>
+    <edge id=":intersection_9" function="internal">
+        <lane id=":intersection_9_0" index="0" speed="16.67" length="38.00" shape="-26.56,17.66 -17.00,24.50 -10.64,30.33 -4.99,35.91 2.40,42.01"/>
+        <lane id=":intersection_9_1" index="1" speed="16.67" length="38.00" shape="-28.47,20.24 -18.88,27.10 -12.49,32.94 -6.83,38.53 0.57,44.64"/>
+        <lane id=":intersection_9_2" index="2" speed="16.67" length="38.00" shape="-30.38,22.81 -20.76,29.70 -14.34,35.55 -8.66,41.15 -1.25,47.27"/>
+    </edge>
+    <edge id=":intersection_12" function="internal">
+        <lane id=":intersection_12_0" index="0" speed="14.59" length="53.92" shape="-32.29,25.39 -27.88,34.20 -24.75,50.17 -23.59,66.86 -25.05,77.82"/>
+    </edge>
+    <edge id=":intersection_13" function="internal">
+        <lane id=":intersection_13_0" index="0" speed="8.96" length="38.78" shape="-32.29,25.39 -28.29,36.67 -29.61,43.97 -36.24,47.30 -48.19,46.65"/>
+    </edge>
+    <edge id=":intersection_14" function="internal">
+        <lane id=":intersection_14_0" index="0" speed="14.59" length="49.67" shape="-34.20,27.97 -29.94,36.10 -27.10,50.62 -26.21,65.86 -27.80,76.17"/>
+    </edge>
+    <edge id=":intersection_15" function="internal">
+        <lane id=":intersection_15_0" index="0" speed="7.87" length="29.42" shape="-34.20,27.97 -31.15,36.52 -32.14,42.06 -37.16,44.60 -46.23,44.13"/>
+    </edge>
+    <edge id=":intersection_16" function="internal">
+        <lane id=":intersection_16_0" index="0" speed="12.50" length="59.41" shape="-40.98,70.64 -19.61,15.24"/>
+        <lane id=":intersection_16_1" index="1" speed="12.50" length="59.41" shape="-38.08,72.00 -16.67,16.53"/>
+    </edge>
+    <edge id=":italia_merge_1_0" function="internal">
+        <lane id=":italia_merge_1_0_0" index="0" speed="11.81" length="19.54" shape="11.01,37.78 12.18,44.81 13.55,50.20 15.12,53.96 16.90,56.09"/>
+        <lane id=":italia_merge_1_0_1" index="1" speed="11.81" length="22.14" shape="7.83,38.22 9.16,45.90 10.81,51.88 12.78,56.15 15.07,58.71"/>
+    </edge>
+    <edge id=":italia_merge_1_2" function="internal">
+        <lane id=":italia_merge_1_2_0" index="0" speed="16.67" length="19.74" shape="2.56,42.13 18.73,53.47"/>
+        <lane id=":italia_merge_1_2_1" index="1" speed="16.67" length="19.74" shape="0.74,44.76 16.90,56.09"/>
+        <lane id=":italia_merge_1_2_2" index="2" speed="16.67" length="19.74" shape="-1.09,47.39 15.07,58.71"/>
+    </edge>
+    <edge id=":italia_merge_2_0" function="internal">
+        <lane id=":italia_merge_2_0_0" index="0" speed="11.81" length="23.74" shape="-63.05,49.22 -65.02,43.19 -65.79,38.15 -67.35,33.38 -71.65,28.13"/>
+        <lane id=":italia_merge_2_0_1" index="1" speed="11.81" length="23.74" shape="-60.27,47.62 -62.29,41.51 -63.21,36.27 -64.97,31.24 -69.54,25.73"/>
+    </edge>
+    <edge id=":italia_merge_2_2" function="internal">
+        <lane id=":italia_merge_2_2_0" index="0" speed="16.67" length="22.36" shape="-56.15,44.78 -61.57,40.79 -65.23,37.99 -68.75,35.02 -73.77,30.53"/>
+        <lane id=":italia_merge_2_2_1" index="1" speed="16.67" length="22.36" shape="-54.28,42.18 -59.63,38.25 -63.23,35.48 -66.71,32.56 -71.65,28.13"/>
+        <lane id=":italia_merge_2_2_2" index="2" speed="16.67" length="22.36" shape="-52.41,39.58 -57.68,35.71 -61.24,32.98 -64.66,30.09 -69.54,25.73"/>
+    </edge>
+    <edge id=":italia_merge_split_1_0" function="internal">
+        <lane id=":italia_merge_split_1_0_0" index="0" speed="11.81" length="39.34" shape="-73.86,-17.99 -64.77,-11.28 -56.00,-5.01 -47.67,-0.61 -39.91,0.50"/>
+    </edge>
+    <edge id=":italia_merge_split_1_1" function="internal">
+        <lane id=":italia_merge_split_1_1_0" index="0" speed="16.67" length="42.10" shape="-73.86,-17.99 -65.73,-12.25 -58.62,-7.00 -50.81,-0.82 -40.56,7.73"/>
+    </edge>
+    <edge id=":italia_merge_split_1_2" function="internal">
+        <lane id=":italia_merge_split_1_2_0" index="0" speed="11.81" length="41.56" shape="-75.84,-15.47 -66.41,-8.65 -56.89,-2.15 -47.81,2.49 -39.71,3.70"/>
+    </edge>
+    <edge id=":italia_merge_split_1_3" function="internal">
+        <lane id=":italia_merge_split_1_3_0" index="0" speed="16.67" length="42.06" shape="-75.84,-15.47 -67.72,-9.74 -60.63,-4.51 -52.84,1.65 -42.63,10.17"/>
+        <lane id=":italia_merge_split_1_3_1" index="1" speed="16.67" length="42.06" shape="-75.84,-15.47 -68.38,-8.99 -62.73,-2.09 -56.37,5.74 -46.77,15.05"/>
+        <lane id=":italia_merge_split_1_3_2" index="2" speed="16.67" length="42.06" shape="-77.82,-12.96 -69.71,-7.23 -62.64,-2.02 -54.88,4.12 -44.70,12.61"/>
+        <lane id=":italia_merge_split_1_3_3" index="3" speed="16.67" length="42.06" shape="-77.82,-12.96 -70.37,-6.47 -64.74,0.40 -58.40,8.21 -48.84,17.50"/>
+    </edge>
+    <edge id=":italia_merge_split_1_7" function="internal">
+        <lane id=":italia_merge_split_1_7_0" index="0" speed="6.94" length="35.09" shape="-74.23,-1.46 -68.46,-1.61 -59.11,0.61 -48.69,3.08 -39.71,3.70"/>
+    </edge>
+    <edge id=":italia_merge_split_1_8" function="internal">
+        <lane id=":italia_merge_split_1_8_0" index="0" speed="11.81" length="34.05" shape="-74.23,-1.46 -69.63,-2.37 -63.17,-0.32 -54.87,4.67 -44.70,12.61"/>
+        <lane id=":italia_merge_split_1_8_1" index="1" speed="11.81" length="32.74" shape="-74.23,-1.46 -70.81,-1.53 -65.09,1.20 -57.08,6.73 -46.77,15.05"/>
+        <lane id=":italia_merge_split_1_8_2" index="2" speed="11.81" length="31.83" shape="-74.23,-1.46 -71.99,-0.70 -67.01,2.72 -59.30,8.78 -48.84,17.50"/>
+    </edge>
+    <edge id=":italia_merge_split_2_0" function="internal">
+        <lane id=":italia_merge_split_2_0_0" index="0" speed="11.81" length="28.35" shape="24.46,103.36 16.80,98.77 10.63,95.88 4.80,94.63 -1.84,94.93"/>
+    </edge>
+    <edge id=":italia_merge_split_2_1" function="internal">
+        <lane id=":italia_merge_split_2_1_0" index="0" speed="16.67" length="30.11" shape="24.46,103.36 -1.32,87.79"/>
+    </edge>
+    <edge id=":italia_merge_split_2_2" function="internal">
+        <lane id=":italia_merge_split_2_2_0" index="0" speed="11.81" length="14.04" shape="26.15,100.64 17.76,95.74 13.81,94.00"/>
+    </edge>
+    <edge id=":italia_merge_split_2_3" function="internal">
+        <lane id=":italia_merge_split_2_3_0" index="0" speed="16.67" length="29.98" shape="26.15,100.64 0.54,85.19"/>
+        <lane id=":italia_merge_split_2_3_1" index="1" speed="16.67" length="29.98" shape="26.15,100.64 19.08,95.30 15.02,90.61 11.05,85.78 4.25,79.98"/>
+        <lane id=":italia_merge_split_2_3_2" index="2" speed="16.67" length="29.98" shape="27.84,97.92 2.40,82.58"/>
+        <lane id=":italia_merge_split_2_3_3" index="3" speed="16.67" length="29.98" shape="27.84,97.92 20.80,92.60 16.78,87.94 12.86,83.13 6.11,77.37"/>
+    </edge>
+    <edge id=":italia_merge_split_2_12" function="internal">
+        <lane id=":italia_merge_split_2_12_0" index="0" speed="11.81" length="16.50" shape="13.81,94.00 10.90,92.72 4.55,91.45 -2.29,91.76"/>
+    </edge>
+    <edge id=":italia_merge_split_2_7" function="internal">
+        <lane id=":italia_merge_split_2_7_0" index="0" speed="6.94" length="32.34" shape="30.12,91.75 24.66,93.04 16.20,93.69 6.71,94.17 -1.84,94.93"/>
+        <lane id=":italia_merge_split_2_7_1" index="1" speed="6.94" length="32.34" shape="30.12,91.75 24.59,92.54 15.97,92.11 6.33,91.50 -2.29,91.76"/>
+    </edge>
+    <edge id=":italia_merge_split_2_9" function="internal">
+        <lane id=":italia_merge_split_2_9_0" index="0" speed="11.81" length="30.36" shape="30.12,91.75 25.20,92.88 18.94,91.72 11.34,88.29 2.40,82.58"/>
+        <lane id=":italia_merge_split_2_9_1" index="1" speed="11.81" length="29.10" shape="30.12,91.75 26.49,92.08 20.98,90.23 13.56,86.20 4.25,79.98"/>
+        <lane id=":italia_merge_split_2_9_2" index="2" speed="11.81" length="28.16" shape="30.12,91.75 27.79,91.29 23.02,88.74 15.79,84.10 6.11,77.37"/>
+    </edge>
+    <edge id=":italia_split_1_0" function="internal">
+        <lane id=":italia_split_1_0_0" index="0" speed="16.67" length="15.56" shape="30.08,61.41 42.86,70.01"/>
+        <lane id=":italia_split_1_0_1" index="1" speed="16.67" length="15.56" shape="28.25,64.03 41.16,72.72"/>
+        <lane id=":italia_split_1_0_2" index="2" speed="16.67" length="15.56" shape="26.42,66.65 39.45,75.43"/>
+    </edge>
+    <edge id=":italia_split_1_3" function="internal">
+        <lane id=":italia_split_1_3_0" index="0" speed="11.81" length="14.95" shape="26.42,66.65 30.24,69.61 33.09,72.46 34.96,75.19 35.86,77.81"/>
+    </edge>
+    <edge id=":italia_split_2_0" function="internal">
+        <lane id=":italia_split_2_0_0" index="0" speed="16.67" length="16.86" shape="-76.57,28.01 -80.25,24.75 -82.86,22.63 -85.55,20.61 -89.51,17.70"/>
+        <lane id=":italia_split_2_0_1" index="1" speed="16.67" length="16.86" shape="-74.43,25.63 -78.18,22.32 -80.83,20.15 -83.57,18.10 -87.60,15.13"/>
+        <lane id=":italia_split_2_0_2" index="2" speed="16.67" length="16.86" shape="-72.29,23.25 -76.10,19.88 -78.80,17.67 -81.59,15.58 -85.69,12.56"/>
+    </edge>
+    <edge id=":italia_split_2_3" function="internal">
+        <lane id=":italia_split_2_3_0" index="0" speed="11.81" length="15.12" shape="-72.29,23.25 -75.61,19.87 -77.64,16.82 -78.72,13.76 -79.19,10.33"/>
+    </edge>
+    <edge id=":secondary_merge_1_0" function="internal">
+        <lane id=":secondary_merge_1_0_0" index="0" speed="9.72" length="15.72" shape="-16.65,-11.46 -12.89,-13.83 -10.04,-15.31 -7.77,-17.23 -5.77,-20.94"/>
+        <lane id=":secondary_merge_1_0_1" index="1" speed="9.72" length="15.72" shape="-14.73,-8.90 -10.56,-11.59 -7.45,-13.34 -4.99,-15.58 -2.79,-19.77"/>
+    </edge>
+    <edge id=":secondary_merge_1_2" function="internal">
+        <lane id=":secondary_merge_1_2_0" index="0" speed="12.50" length="16.85" shape="-11.41,-5.08 -5.77,-20.94"/>
+        <lane id=":secondary_merge_1_2_1" index="1" speed="12.50" length="16.85" shape="-8.45,-3.88 -2.79,-19.77"/>
+    </edge>
+    <edge id=":secondary_merge_2_0" function="internal">
+        <lane id=":secondary_merge_2_0_0" index="0" speed="9.72" length="25.75" shape="-28.33,104.37 -34.03,107.98 -38.51,111.58 -42.15,115.92 -45.30,121.77"/>
+        <lane id=":secondary_merge_2_0_1" index="1" speed="9.72" length="25.75" shape="-29.99,101.63 -35.88,105.47 -40.80,109.56 -44.88,114.41 -48.22,120.49"/>
+    </edge>
+    <edge id=":secondary_merge_2_2" function="internal">
+        <lane id=":secondary_merge_2_2_0" index="0" speed="12.50" length="24.72" shape="-35.78,99.05 -45.30,121.77"/>
+        <lane id=":secondary_merge_2_2_1" index="1" speed="12.50" length="24.72" shape="-38.64,97.61 -48.22,120.49"/>
+    </edge>
+    <edge id=":secondary_turn_1_0" function="internal">
+        <lane id=":secondary_turn_1_0_0" index="0" speed="9.72" length="26.87" shape="-59.05,111.00 -56.73,104.38 -55.26,98.12 -54.63,91.73 -54.80,84.73"/>
+        <lane id=":secondary_turn_1_0_1" index="1" speed="9.72" length="27.82" shape="-59.05,111.00 -56.23,104.34 -53.67,98.00 -51.93,91.53 -51.60,84.49"/>
+    </edge>
+    <edge id=":secondary_turn_1_2" function="internal">
+        <lane id=":secondary_turn_1_2_0" index="0" speed="12.50" length="27.82" shape="-59.05,111.00 -47.79,85.47"/>
+        <lane id=":secondary_turn_1_2_1" index="1" speed="12.50" length="27.82" shape="-56.07,112.18 -44.89,86.80"/>
+    </edge>
+    <edge id=":secondary_turn_2_0" function="internal">
+        <lane id=":secondary_turn_2_0_0" index="0" speed="9.72" length="21.87" shape="8.19,-14.19 6.59,-8.31 6.68,-3.68 7.52,1.08 8.18,7.36"/>
+        <lane id=":secondary_turn_2_0_1" index="1" speed="9.72" length="22.13" shape="8.19,-14.19 6.09,-8.29 5.08,-3.62 4.83,1.17 4.98,7.46"/>
+    </edge>
+    <edge id=":secondary_turn_2_2" function="internal">
+        <lane id=":secondary_turn_2_2_0" index="0" speed="12.50" length="22.10" shape="8.19,-14.19 1.29,6.81"/>
+        <lane id=":secondary_turn_2_2_1" index="1" speed="12.50" length="22.10" shape="5.22,-15.37 -1.68,5.62"/>
+    </edge>
+
+    <edge id="e_e" from="italia_split_2" to="italia_merge_split_1" priority="7" type="highway.primary_link" spreadType="center" shape="-79.05,12.24 -79.40,7.41 -78.16,1.09 -73.78,-1.75">
+        <lane id="e_e_0" index="0" speed="6.94" length="14.05" shape="-79.19,10.33 -79.40,7.41 -78.16,1.09 -74.23,-1.46"/>
+    </edge>
+    <edge id="e_n" from="italia_merge_split_2" to="secondary_merge_2" priority="12" type="highway.primary" spreadType="center" shape="1.28,92.87 -16.59,95.41 -29.16,103.00">
+        <lane id="e_n_0" index="0" speed="6.94" length="29.36" shape="-1.84,94.93 -16.04,96.95 -28.33,104.37"/>
+        <lane id="e_n_1" index="1" speed="6.94" length="29.36" shape="-2.29,91.76 -17.14,93.87 -29.99,101.63"/>
+    </edge>
+    <edge id="e_w_01" from="italia_origin_2" to="italia_merge_split_2" priority="12" type="highway.primary" spreadType="center" shape="175.37,193.47 26.15,100.64">
+        <lane id="e_w_01_0" index="0" speed="16.67" length="175.74" shape="173.68,196.19 24.46,103.36"/>
+        <lane id="e_w_01_1" index="1" speed="16.67" length="175.74" shape="175.37,193.47 26.15,100.64"/>
+        <lane id="e_w_01_2" index="2" speed="16.67" length="175.74" shape="177.06,190.75 27.84,97.92"/>
+    </edge>
+    <edge id="e_w_02" from="italia_merge_split_2" to="intersection" priority="12" type="highway.primary" spreadType="center" shape="3.74,83.54 -17.48,68.41">
+        <lane id="e_w_02_0" index="0" speed="16.67" length="20.81" shape="-1.32,87.79 -17.86,76.00"/>
+        <lane id="e_w_02_1" index="1" speed="16.67" length="20.81" shape="0.54,85.19 -16.20,73.25"/>
+        <lane id="e_w_02_2" index="2" speed="16.67" length="20.81" shape="2.40,82.58 -14.55,70.50"/>
+        <lane id="e_w_02_3" index="3" speed="16.67" length="20.81" shape="4.25,79.98 -12.89,67.75"/>
+        <lane id="e_w_02_4" index="4" speed="16.67" length="20.81" shape="6.11,77.37 -11.24,65.00"/>
+    </edge>
+    <edge id="e_w_03" from="intersection" to="italia_merge_2" priority="12" type="highway.primary" spreadType="center" shape="-38.15,54.03 -54.76,41.83">
+        <lane id="e_w_03_0" index="0" speed="16.67" length="7.55" shape="-50.16,49.18 -56.15,44.78"/>
+        <lane id="e_w_03_1" index="1" speed="16.67" length="7.55" shape="-48.19,46.65 -54.28,42.18"/>
+        <lane id="e_w_03_2" index="2" speed="16.67" length="7.55" shape="-46.23,44.13 -52.41,39.58"/>
+    </edge>
+    <edge id="e_w_04" from="italia_merge_2" to="italia_split_2" priority="12" type="highway.primary" spreadType="center" shape="-67.40,31.97 -74.43,25.63">
+        <lane id="e_w_04_0" index="0" speed="16.67" length="3.74" shape="-73.77,30.53 -76.57,28.01"/>
+        <lane id="e_w_04_1" index="1" speed="16.67" length="3.74" shape="-71.65,28.13 -74.43,25.63"/>
+        <lane id="e_w_04_2" index="2" speed="16.67" length="3.74" shape="-69.54,25.73 -72.29,23.25"/>
+    </edge>
+    <edge id="e_w_05" from="italia_split_2" to="italia_end_2" priority="12" type="highway.primary" spreadType="center" shape="-87.60,15.13 -182.86,-55.74 -267.25,-114.22">
+        <lane id="e_w_05_0" index="0" speed="16.67" length="221.40" shape="-89.51,17.70 -184.73,-53.14 -269.07,-111.59"/>
+        <lane id="e_w_05_1" index="1" speed="16.67" length="221.40" shape="-87.60,15.13 -182.86,-55.74 -267.25,-114.22"/>
+        <lane id="e_w_05_2" index="2" speed="16.67" length="221.40" shape="-85.69,12.56 -180.99,-58.34 -265.43,-116.85"/>
+    </edge>
+    <edge id="n_s_01" from="secondary_origin_1" to="secondary_turn_1" priority="11" type="highway.secondary" spreadType="center" shape="-94.55,199.87 -80.95,170.88 -57.56,111.59">
+        <lane id="n_s_01_0" index="0" speed="12.50" length="95.76" shape="-96.00,199.19 -82.42,170.25 -59.05,111.00"/>
+        <lane id="n_s_01_1" index="1" speed="12.50" length="95.76" shape="-93.10,200.55 -79.48,171.51 -56.07,112.18"/>
+    </edge>
+    <edge id="n_s_02" from="secondary_turn_1" to="intersection" priority="12" type="highway.primary" spreadType="center" shape="-47.49,88.64 -36.29,64.26">
+        <lane id="n_s_02_0" index="0" speed="12.50" length="16.31" shape="-47.79,85.47 -40.98,70.64"/>
+        <lane id="n_s_02_1" index="1" speed="12.50" length="16.31" shape="-44.89,86.80 -38.08,72.00"/>
+    </edge>
+    <edge id="n_s_03" from="intersection" to="secondary_merge_1" priority="12" type="highway.primary" spreadType="center" shape="-19.37,18.94 -9.93,-4.48">
+        <lane id="n_s_03_0" index="0" speed="12.50" length="21.96" shape="-19.61,15.24 -11.41,-5.08"/>
+        <lane id="n_s_03_1" index="1" speed="12.50" length="21.96" shape="-16.67,16.53 -8.45,-3.88"/>
+    </edge>
+    <edge id="n_s_04" from="secondary_merge_1" to="secondary_end_1" priority="11" type="highway.secondary" spreadType="center">
+        <lane id="n_s_04_0" index="0" speed="12.50" length="184.14" shape="-5.77,-20.94 61.47,-192.36"/>
+        <lane id="n_s_04_1" index="1" speed="12.50" length="184.14" shape="-2.79,-19.77 64.45,-191.20"/>
+    </edge>
+    <edge id="n_w" from="secondary_turn_1" to="italia_merge_2" priority="7" type="highway.primary_link" spreadType="center" shape="-53.20,84.61 -54.44,68.15 -58.49,55.07 -62.63,46.38">
+        <lane id="n_w_0" index="0" speed="6.94" length="37.57" shape="-54.80,84.73 -56.02,68.45 -59.98,55.65 -63.05,49.22"/>
+        <lane id="n_w_1" index="1" speed="6.94" length="37.57" shape="-51.60,84.49 -52.86,67.85 -57.00,54.49 -60.27,47.62"/>
+    </edge>
+    <edge id="s_e" from="secondary_turn_2" to="italia_merge_1" priority="12" type="highway.primary" spreadType="center" shape="6.56,6.82 7.01,20.37 9.42,38.00">
+        <lane id="s_e_0" index="0" speed="6.94" length="30.76" shape="8.18,7.36 8.61,20.23 11.01,37.78"/>
+        <lane id="s_e_1" index="1" speed="6.94" length="30.76" shape="4.98,7.46 5.41,20.51 7.83,38.22"/>
+    </edge>
+    <edge id="s_n_01" from="secondary_origin_2" to="secondary_turn_2" priority="11" type="highway.secondary" spreadType="center" shape="77.51,-193.74 6.56,-14.41">
+        <lane id="s_n_01_0" index="0" speed="12.50" length="192.46" shape="79.00,-193.15 8.19,-14.19"/>
+        <lane id="s_n_01_1" index="1" speed="12.50" length="192.46" shape="76.02,-194.33 5.22,-15.37"/>
+    </edge>
+    <edge id="s_n_02" from="secondary_turn_2" to="intersection" priority="12" type="highway.primary" spreadType="center" shape="-0.07,5.90 -7.52,24.42">
+        <lane id="s_n_02_0" index="0" speed="12.50" length="15.04" shape="1.29,6.81 -4.31,20.74"/>
+        <lane id="s_n_02_1" index="1" speed="12.50" length="15.04" shape="-1.68,5.62 -7.30,19.59"/>
+    </edge>
+    <edge id="s_n_03" from="intersection" to="secondary_merge_2" priority="1" type="highway.primary" spreadType="center" shape="-25.79,75.74 -37.21,98.33">
+        <lane id="s_n_03_0" index="0" speed="12.50" length="23.91" shape="-25.05,77.82 -35.78,99.05"/>
+        <lane id="s_n_03_1" index="1" speed="12.50" length="23.91" shape="-27.80,76.17 -38.64,97.61"/>
+    </edge>
+    <edge id="s_n_04" from="secondary_merge_2" to="secondary_end_2" priority="12" type="highway.primary" spreadType="center" shape="-46.76,121.13 -82.07,201.31">
+        <lane id="s_n_04_0" index="0" speed="12.50" length="87.61" shape="-45.30,121.77 -80.61,201.95"/>
+        <lane id="s_n_04_1" index="1" speed="12.50" length="87.61" shape="-48.22,120.49 -83.53,200.67"/>
+    </edge>
+    <edge id="w_e_01" from="italia_origin_1" to="italia_merge_split_1" priority="1" type="highway.primary" spreadType="center" shape="-266.29,-145.91 -210.33,-109.96 -75.72,-15.39">
+        <lane id="w_e_01_0" index="0" speed="16.67" length="230.87" shape="-264.56,-148.60 -208.54,-112.62 -73.86,-17.99"/>
+        <lane id="w_e_01_1" index="1" speed="16.67" length="230.87" shape="-266.29,-145.91 -210.33,-109.96 -75.84,-15.47"/>
+        <lane id="w_e_01_2" index="2" speed="16.67" length="230.87" shape="-268.02,-143.22 -212.12,-107.30 -77.82,-12.96"/>
+    </edge>
+    <edge id="w_e_02" from="italia_merge_split_1" to="intersection" priority="1" type="highway.primary" spreadType="center" shape="-48.38,9.49 -39.57,16.97 -26.22,25.46">
+        <lane id="w_e_02_0" index="0" speed="16.67" length="17.62" shape="-40.56,7.73 -35.76,11.81 -26.56,17.66"/>
+        <lane id="w_e_02_1" index="1" speed="16.67" length="17.62" shape="-42.63,10.17 -37.67,14.39 -28.47,20.24"/>
+        <lane id="w_e_02_2" index="2" speed="16.67" length="17.62" shape="-44.70,12.61 -39.57,16.97 -30.38,22.81"/>
+        <lane id="w_e_02_3" index="3" speed="16.67" length="17.62" shape="-46.77,15.05 -41.47,19.55 -32.29,25.39"/>
+        <lane id="w_e_02_4" index="4" speed="16.67" length="17.62" shape="-48.84,17.50 -43.38,22.13 -34.20,27.97"/>
+    </edge>
+    <edge id="w_e_03" from="intersection" to="italia_merge_1" priority="12" type="highway.primary" spreadType="center" shape="-6.73,39.31 6.00,48.60">
+        <lane id="w_e_03_0" index="0" speed="16.67" length="0.20" shape="2.40,42.01 2.56,42.13"/>
+        <lane id="w_e_03_1" index="1" speed="16.67" length="0.20" shape="0.57,44.64 0.74,44.76"/>
+        <lane id="w_e_03_2" index="2" speed="16.67" length="0.20" shape="-1.25,47.27 -1.09,47.39"/>
+    </edge>
+    <edge id="w_e_04" from="italia_merge_1" to="italia_split_1" priority="12" type="highway.primary" spreadType="center" shape="16.90,56.09 28.25,64.03">
+        <lane id="w_e_04_0" index="0" speed="16.67" length="13.85" shape="18.73,53.47 30.08,61.41"/>
+        <lane id="w_e_04_1" index="1" speed="16.67" length="13.85" shape="16.90,56.09 28.25,64.03"/>
+        <lane id="w_e_04_2" index="2" speed="16.67" length="13.85" shape="15.07,58.71 26.42,66.65"/>
+    </edge>
+    <edge id="w_e_05" from="italia_split_1" to="italia_end_1" priority="12" type="highway.primary" spreadType="center" shape="40.50,72.31 234.12,193.88">
+        <lane id="w_e_05_0" index="0" speed="16.67" length="227.85" shape="42.86,70.01 235.82,191.17"/>
+        <lane id="w_e_05_1" index="1" speed="16.67" length="227.85" shape="41.16,72.72 234.12,193.88"/>
+        <lane id="w_e_05_2" index="2" speed="16.67" length="227.85" shape="39.45,75.43 232.42,196.59"/>
+    </edge>
+    <edge id="w_s" from="italia_merge_split_1" to="secondary_merge_1" priority="7" type="highway.primary_link" spreadType="center" shape="-39.58,2.07 -30.27,0.80 -15.69,-10.18">
+        <lane id="w_s_0" index="0" speed="6.94" length="27.88" shape="-39.91,0.50 -30.90,-0.73 -16.65,-11.46"/>
+        <lane id="w_s_1" index="1" speed="6.94" length="27.88" shape="-39.71,3.70 -29.64,2.33 -14.73,-8.90"/>
+    </edge>
+    <edge id="w_w" from="italia_split_1" to="italia_merge_split_2" priority="7" type="highway.primary_link" spreadType="center" shape="35.57,76.01 36.35,80.84 33.83,87.23 31.78,90.86 27.92,92.92">
+        <lane id="w_w_0" index="0" speed="6.94" length="15.99" shape="35.86,77.81 36.35,80.84 33.83,87.23 31.78,90.86 30.12,91.75"/>
+    </edge>
+
+    <tlLogic id="J5" type="static" programID="0" offset="0">
+        <phase duration="60" state="rrGrrG"/>
+        <phase duration="6"  state="rryrry"/>
+        <phase duration="24" state="GrrGrr"/>
+        <phase duration="6"  state="yrryrr"/>
+        <phase duration="24" state="GGrrrr"/>
+        <phase duration="6"  state="yyrrrr"/>
+        <phase duration="24" state="rrrGGr"/>
+        <phase duration="6"  state="rrryyr"/>
+    </tlLogic>
+
+    <junction id="intersection" type="traffic_light" x="-23.90" y="40.09" incLanes="e_w_02_0 e_w_02_1 e_w_02_2 e_w_02_3 e_w_02_4 s_n_02_0 s_n_02_1 w_e_02_0 w_e_02_1 w_e_02_2 w_e_02_3 w_e_02_4 n_s_02_0 n_s_02_1" intLanes=":intersection_0_0 :intersection_0_1 :intersection_0_2 :intersection_3_0 :intersection_4_0 :intersection_5_0 :intersection_6_0 :intersection_7_0 :intersection_7_1 :intersection_9_0 :intersection_9_1 :intersection_9_2 :intersection_12_0 :intersection_13_0 :intersection_14_0 :intersection_15_0 :intersection_16_0 :intersection_16_1" shape="-18.68,77.37 -10.47,63.72 -12.21,53.59 -9.00,43.48 -0.84,48.08 4.22,40.45 0.85,37.75 -1.55,34.86 -4.49,31.09 -4.06,28.37 -3.42,25.37 -2.31,21.50 -8.99,18.95 -11.52,26.27 -16.18,24.25 -15.55,17.02 -21.17,14.56 -23.14,17.65 -25.68,16.47 -35.11,29.20 -33.55,39.43 -35.35,47.09 -44.29,41.63 -51.14,50.45 -46.99,53.26 -42.74,56.66 -40.77,60.00 -39.93,62.95 -40.70,66.50 -42.19,70.07 -36.39,72.79 -32.31,65.33 -28.64,69.34 -29.47,75.16 -23.63,78.68 -21.83,76.26 -19.73,76.76" customShape="1">
+        <request index="0"  response="000000000000000000" foes="111111000110000000" cont="0"/>
+        <request index="1"  response="000000000000000000" foes="111111000110000000" cont="0"/>
+        <request index="2"  response="000000000000000000" foes="111111000110000000" cont="0"/>
+        <request index="3"  response="000000000110000000" foes="110000111110000000" cont="0"/>
+        <request index="4"  response="000000111000000000" foes="000000111000000000" cont="0"/>
+        <request index="5"  response="000000000110000000" foes="110000111110000000" cont="0"/>
+        <request index="6"  response="000000111000000000" foes="000000111000000000" cont="0"/>
+        <request index="7"  response="000000000000000111" foes="000101111000101111" cont="0"/>
+        <request index="8"  response="000000000000000111" foes="000101111000101111" cont="0"/>
+        <request index="9"  response="000000000110101000" foes="110000000111111000" cont="0"/>
+        <request index="10" response="000000000110101000" foes="110000000111111000" cont="0"/>
+        <request index="11" response="000000000110101000" foes="110000000111111000" cont="0"/>
+        <request index="12" response="110000000110000111" foes="110000000110000111" cont="0"/>
+        <request index="13" response="000000000000000111" foes="000000000000000111" cont="0"/>
+        <request index="14" response="110000000110000111" foes="110000000110000111" cont="0"/>
+        <request index="15" response="000000000000000111" foes="000000000000000111" cont="0"/>
+        <request index="16" response="000000111000101111" foes="000101111000101111" cont="0"/>
+        <request index="17" response="000000111000101111" foes="000101111000101111" cont="0"/>
+    </junction>
+    <junction id="italia_end_1" type="dead_end" x="234.12" y="193.88" incLanes="w_e_05_0 w_e_05_1 w_e_05_2" intLanes="" shape="236.67,189.81 231.57,197.95"/>
+    <junction id="italia_end_2" type="dead_end" x="-267.25" y="-114.22" incLanes="e_w_05_0 e_w_05_1 e_w_05_2" intLanes="" shape="-269.98,-110.27 -264.52,-118.17"/>
+    <junction id="italia_merge_1" type="priority" x="11.41" y="52.54" incLanes="s_e_0 s_e_1 w_e_03_0 w_e_03_1 w_e_03_2" intLanes=":italia_merge_1_0_0 :italia_merge_1_0_1 :italia_merge_1_2_0 :italia_merge_1_2_1 :italia_merge_1_2_2" shape="14.15,60.02 19.65,52.16 17.90,50.66 16.38,48.79 15.09,46.55 14.02,43.93 13.19,40.94 12.59,37.57 6.25,38.43 6.18,40.83 5.77,41.39 5.09,41.51 4.17,41.20 2.98,40.45 -2.68,48.21">
+        <request index="0" response="11100" foes="11100" cont="0"/>
+        <request index="1" response="11100" foes="11100" cont="0"/>
+        <request index="2" response="00000" foes="00011" cont="0"/>
+        <request index="3" response="00000" foes="00011" cont="0"/>
+        <request index="4" response="00000" foes="00011" cont="0"/>
+    </junction>
+    <junction id="italia_merge_2" type="priority" x="-70.79" y="30.51" incLanes="n_w_0 n_w_1 e_w_03_0 e_w_03_1 e_w_03_2" intLanes=":italia_merge_2_0_0 :italia_merge_2_0_1 :italia_merge_2_2_0 :italia_merge_2_2_1 :italia_merge_2_2_2" shape="-64.44,50.02 -59.60,47.23 -61.46,42.50 -56.71,45.56 -51.48,38.29 -55.23,35.53 -57.99,33.46 -60.23,31.72 -62.41,29.91 -65.02,27.66 -68.52,24.58 -74.87,31.78 -68.46,43.03" customShape="1">
+        <request index="0" response="11100" foes="11100" cont="0"/>
+        <request index="1" response="11100" foes="11100" cont="0"/>
+        <request index="2" response="00000" foes="00011" cont="0"/>
+        <request index="3" response="00000" foes="00011" cont="0"/>
+        <request index="4" response="00000" foes="00011" cont="0"/>
+    </junction>
+    <junction id="italia_merge_split_1" type="priority" x="-62.60" y="-6.19" incLanes="w_e_01_0 w_e_01_1 w_e_01_2 e_e_0" intLanes=":italia_merge_split_1_0_0 :italia_merge_split_1_1_0 :italia_merge_split_1_2_0 :italia_merge_split_1_3_0 :italia_merge_split_1_3_1 :italia_merge_split_1_3_2 :italia_merge_split_1_3_3 :italia_merge_split_1_7_0 :italia_merge_split_1_8_0 :italia_merge_split_1_8_1 :italia_merge_split_1_8_2" shape="-51.70,20.87 -39.53,6.51 -40.01,-1.10 -46.37,0.58 -52.53,-3.22 -56.50,-6.63 -60.86,-10.05 -66.48,-13.86 -72.87,-19.25 -79.48,-10.85 -76.83,-9.05 -74.88,-7.03 -72.72,-5.20 -74.80,-2.25 -73.44,-0.37 -69.26,-2.32 -65.23,2.32 -61.52,7.91 -57.35,14.37" customShape="1">
+        <request index="0"  response="00010000000" foes="00010000000" cont="0"/>
+        <request index="1"  response="11110000000" foes="11110000100" cont="0"/>
+        <request index="2"  response="00010000010" foes="00010000010" cont="0"/>
+        <request index="3"  response="11110000000" foes="11110000000" cont="0"/>
+        <request index="4"  response="11110100000" foes="11110100000" cont="0"/>
+        <request index="5"  response="11110000000" foes="11110010000" cont="0"/>
+        <request index="6"  response="11110000000" foes="11110000000" cont="0"/>
+        <request index="7"  response="00000000000" foes="00001111111" cont="0"/>
+        <request index="8"  response="00000000000" foes="00001111010" cont="0"/>
+        <request index="9"  response="00000000000" foes="00001111010" cont="0"/>
+        <request index="10" response="00000000000" foes="00001111010" cont="0"/>
+    </junction>
+    <junction id="italia_merge_split_2" type="priority" x="18.46" y="95.60" incLanes="e_w_01_0 e_w_01_1 e_w_01_2 w_w_0" intLanes=":italia_merge_split_2_0_0 :italia_merge_split_2_1_0 :italia_merge_split_2_12_0 :italia_merge_split_2_3_0 :italia_merge_split_2_3_1 :italia_merge_split_2_3_2 :italia_merge_split_2_3_3 :italia_merge_split_2_7_0 :italia_merge_split_2_7_1 :italia_merge_split_2_9_0 :italia_merge_split_2_9_1 :italia_merge_split_2_9_2" shape="23.61,104.72 28.69,96.56 28.07,95.65 28.26,95.11 28.80,94.51 29.67,93.86 30.87,93.16 29.36,90.34 26.30,89.06 23.12,87.12 18.85,84.31 13.49,80.62 7.04,76.07 -2.25,89.10 -1.74,89.60 -1.70,89.80 -1.82,89.96 -2.09,90.09 -2.51,90.18 -1.61,96.51 4.03,95.99 8.26,96.25 11.70,97.29 14.99,99.06 18.75,101.55">
+        <request index="0"  response="000000000000" foes="000110000000" cont="0"/>
+        <request index="1"  response="000000000000" foes="111110000100" cont="0"/>
+        <request index="2"  response="000000000010" foes="000110000010" cont="1"/>
+        <request index="3"  response="000000000000" foes="111110000000" cont="0"/>
+        <request index="4"  response="000000100000" foes="111110100000" cont="0"/>
+        <request index="5"  response="000000000000" foes="111110010000" cont="0"/>
+        <request index="6"  response="000000000000" foes="111110000000" cont="0"/>
+        <request index="7"  response="000001111111" foes="000001111111" cont="0"/>
+        <request index="8"  response="000001111111" foes="000001111111" cont="0"/>
+        <request index="9"  response="000001111010" foes="000001111010" cont="0"/>
+        <request index="10" response="000001111010" foes="000001111010" cont="0"/>
+        <request index="11" response="000001111010" foes="000001111010" cont="0"/>
+    </junction>
+    <junction id="italia_origin_1" type="dead_end" x="-266.29" y="-145.91" incLanes="" intLanes="" shape="-268.88,-141.87 -263.70,-149.95"/>
+    <junction id="italia_origin_2" type="dead_end" x="175.37" y="193.47" incLanes="" intLanes="" shape="177.91,189.39 172.83,197.55"/>
+    <junction id="italia_split_1" type="priority" x="34.31" y="68.27" incLanes="w_e_04_0 w_e_04_1 w_e_04_2" intLanes=":italia_split_1_0_0 :italia_split_1_0_1 :italia_split_1_0_2 :italia_split_1_3_0" shape="34.28,78.07 37.44,77.56 37.45,76.73 37.60,76.53 37.84,76.47 38.17,76.56 38.60,76.79 43.71,68.66 31.00,60.10 25.50,67.96 27.98,69.81 30.06,71.59 31.73,73.31 32.99,74.96 33.84,76.55">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+    <junction id="italia_split_2" type="priority" x="-78.35" y="22.09" incLanes="e_w_04_0 e_w_04_1 e_w_04_2" intLanes=":italia_split_2_0_0 :italia_split_2_0_1 :italia_split_2_0_2 :italia_split_2_3_0" shape="-77.64,29.19 -71.22,22.07 -73.39,20.09 -74.98,18.48 -76.10,16.97 -76.83,15.27 -77.30,13.11 -77.59,10.21 -80.78,10.44 -81.09,12.31 -81.63,12.65 -82.41,12.59 -83.45,12.13 -84.73,11.28 -90.47,18.98 -87.65,21.06 -85.57,22.58 -83.87,23.86 -82.21,25.19 -80.25,26.87">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+    <junction id="secondary_end_1" type="dead_end" x="62.96" y="-191.78" incLanes="n_s_04_0 n_s_04_1" intLanes="" shape="59.98,-192.95 65.94,-190.61"/>
+    <junction id="secondary_end_2" type="dead_end" x="-82.07" y="201.31" incLanes="s_n_04_0 s_n_04_1" intLanes="" shape="-79.14,202.60 -85.00,200.02"/>
+    <junction id="secondary_merge_1" type="priority" x="-7.35" y="-12.52" incLanes="w_s_0 w_s_1 n_s_03_0 n_s_03_1" intLanes=":secondary_merge_1_0_0 :secondary_merge_1_0_1 :secondary_merge_1_2_0 :secondary_merge_1_2_1" shape="-1.30,-19.18 -7.26,-21.52 -8.51,-18.96 -9.84,-17.34 -11.33,-16.29 -13.07,-15.42 -15.14,-14.37 -17.62,-12.74 -13.76,-7.62 -12.61,-8.20 -12.36,-8.03 -12.33,-7.55 -12.50,-6.77 -12.90,-5.68 -6.96,-3.28">
+        <request index="0" response="1100" foes="1100" cont="0"/>
+        <request index="1" response="1100" foes="1100" cont="0"/>
+        <request index="2" response="0000" foes="0011" cont="0"/>
+        <request index="3" response="0000" foes="0011" cont="0"/>
+    </junction>
+    <junction id="secondary_merge_2" type="priority" x="-39.17" y="109.05" incLanes="e_n_0 e_n_1 s_n_03_0 s_n_03_1" intLanes=":secondary_merge_2_0_0 :secondary_merge_2_0_1 :secondary_merge_2_2_0 :secondary_merge_2_2_1" shape="-27.51,105.74 -30.81,100.26 -33.63,101.67 -34.42,101.78 -34.81,101.51 -34.79,100.84 -34.35,99.77 -40.07,96.89 -49.69,119.84 -43.83,122.42 -41.68,117.89 -39.73,114.69 -37.65,112.34 -35.13,110.37 -31.86,108.33">
+        <request index="0" response="0000" foes="1100" cont="0"/>
+        <request index="1" response="0000" foes="1100" cont="0"/>
+        <request index="2" response="0011" foes="0011" cont="0"/>
+        <request index="3" response="0011" foes="0011" cont="0"/>
+    </junction>
+    <junction id="secondary_origin_1" type="dead_end" x="-94.55" y="199.87" incLanes="" intLanes="" shape="-91.65,201.23 -97.45,198.51"/>
+    <junction id="secondary_origin_2" type="dead_end" x="77.51" y="-193.74" incLanes="" intLanes="" shape="74.53,-194.92 80.49,-192.56"/>
+    <junction id="secondary_turn_1" type="priority" x="-52.14" y="98.76" incLanes="n_s_01_0 n_s_01_1" intLanes=":secondary_turn_1_0_0 :secondary_turn_1_0_1 :secondary_turn_1_2_0 :secondary_turn_1_2_1" shape="-43.43,87.47 -49.25,84.80 -50.01,84.37 -56.39,84.85 -56.03,90.39 -55.98,94.54 -56.32,97.96 -57.13,101.30 -58.51,105.24 -60.54,110.42 -54.58,112.76">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+    <junction id="secondary_turn_2" type="priority" x="1.71" y="-2.14" incLanes="s_n_01_0 s_n_01_1" intLanes=":secondary_turn_2_0_0 :secondary_turn_2_0_1 :secondary_turn_2_2_0 :secondary_turn_2_2_1" shape="3.38,7.52 9.78,7.31 9.38,2.80 8.74,-0.60 8.16,-3.42 7.92,-6.18 8.33,-9.40 9.68,-13.60 3.73,-15.96 -3.17,5.02 2.77,7.41">
+        <request index="0" response="0000" foes="0000" cont="0"/>
+        <request index="1" response="0000" foes="0000" cont="0"/>
+        <request index="2" response="0000" foes="0000" cont="0"/>
+        <request index="3" response="0000" foes="0000" cont="0"/>
+    </junction>
+
+    <junction id=":italia_merge_split_2_12_0" type="internal" x="13.81" y="94.00" incLanes=":italia_merge_split_2_2_0 e_w_01_0" intLanes=":italia_merge_split_2_1_0 :italia_merge_split_2_7_0 :italia_merge_split_2_7_1"/>
+
+    <connection from="e_e" to="w_s" fromLane="0" toLane="1" via=":italia_merge_split_1_7_0" dir="s" state="M"/>
+    <connection from="e_e" to="w_e_02" fromLane="0" toLane="2" via=":italia_merge_split_1_8_0" dir="l" state="M"/>
+    <connection from="e_e" to="w_e_02" fromLane="0" toLane="3" via=":italia_merge_split_1_8_1" dir="l" state="M"/>
+    <connection from="e_e" to="w_e_02" fromLane="0" toLane="4" via=":italia_merge_split_1_8_2" dir="l" state="M"/>
+    <connection from="e_n" to="s_n_04" fromLane="0" toLane="0" via=":secondary_merge_2_0_0" dir="s" state="M"/>
+    <connection from="e_n" to="s_n_04" fromLane="1" toLane="1" via=":secondary_merge_2_0_1" dir="s" state="M"/>
+    <connection from="e_w_01" to="e_n" fromLane="0" toLane="0" via=":italia_merge_split_2_0_0" dir="R" state="M"/>
+    <connection from="e_w_01" to="e_w_02" fromLane="0" toLane="0" via=":italia_merge_split_2_1_0" dir="s" state="M"/>
+    <connection from="e_w_01" to="e_n" fromLane="1" toLane="1" via=":italia_merge_split_2_2_0" dir="R" state="m"/>
+    <connection from="e_w_01" to="e_w_02" fromLane="1" toLane="1" via=":italia_merge_split_2_3_0" dir="s" state="M"/>
+    <connection from="e_w_01" to="e_w_02" fromLane="1" toLane="3" via=":italia_merge_split_2_3_1" dir="s" state="m"/>
+    <connection from="e_w_01" to="e_w_02" fromLane="2" toLane="2" via=":italia_merge_split_2_3_2" dir="s" state="M"/>
+    <connection from="e_w_01" to="e_w_02" fromLane="2" toLane="4" via=":italia_merge_split_2_3_3" dir="s" state="M"/>
+    <connection from="e_w_02" to="e_w_03" fromLane="0" toLane="0" via=":intersection_0_0" tl="J5" linkIndex="0" dir="s" state="O"/>
+    <connection from="e_w_02" to="e_w_03" fromLane="1" toLane="1" via=":intersection_0_1" tl="J5" linkIndex="0" dir="s" state="O"/>
+    <connection from="e_w_02" to="e_w_03" fromLane="2" toLane="2" via=":intersection_0_2" tl="J5" linkIndex="0" dir="s" state="O"/>
+    <connection from="e_w_02" to="n_s_03" fromLane="3" toLane="0" via=":intersection_3_0" tl="J5" linkIndex="1" dir="l" state="o"/>
+    <connection from="e_w_02" to="w_e_03" fromLane="3" toLane="1" via=":intersection_4_0" tl="J5" linkIndex="1" dir="t" state="o"/>
+    <connection from="e_w_02" to="n_s_03" fromLane="4" toLane="1" via=":intersection_5_0" tl="J5" linkIndex="1" dir="l" state="o"/>
+    <connection from="e_w_02" to="w_e_03" fromLane="4" toLane="2" via=":intersection_6_0" tl="J5" linkIndex="1" dir="t" state="o"/>
+    <connection from="e_w_03" to="e_w_04" fromLane="0" toLane="0" via=":italia_merge_2_2_0" dir="s" state="M"/>
+    <connection from="e_w_03" to="e_w_04" fromLane="1" toLane="1" via=":italia_merge_2_2_1" dir="s" state="M"/>
+    <connection from="e_w_03" to="e_w_04" fromLane="2" toLane="2" via=":italia_merge_2_2_2" dir="s" state="M"/>
+    <connection from="e_w_04" to="e_w_05" fromLane="0" toLane="0" via=":italia_split_2_0_0" dir="s" state="M"/>
+    <connection from="e_w_04" to="e_w_05" fromLane="1" toLane="1" via=":italia_split_2_0_1" dir="s" state="M"/>
+    <connection from="e_w_04" to="e_w_05" fromLane="2" toLane="2" via=":italia_split_2_0_2" dir="s" state="M"/>
+    <connection from="e_w_04" to="e_e" fromLane="2" toLane="0" via=":italia_split_2_3_0" dir="L" state="M"/>
+    <connection from="n_s_01" to="n_w" fromLane="0" toLane="0" via=":secondary_turn_1_0_0" dir="R" state="M"/>
+    <connection from="n_s_01" to="n_w" fromLane="0" toLane="1" via=":secondary_turn_1_0_1" dir="R" state="M"/>
+    <connection from="n_s_01" to="n_s_02" fromLane="0" toLane="0" via=":secondary_turn_1_2_0" dir="s" state="M"/>
+    <connection from="n_s_01" to="n_s_02" fromLane="1" toLane="1" via=":secondary_turn_1_2_1" dir="s" state="M"/>
+    <connection from="n_s_02" to="n_s_03" fromLane="0" toLane="0" via=":intersection_16_0" tl="J5" linkIndex="5" dir="s" state="o"/>
+    <connection from="n_s_02" to="n_s_03" fromLane="1" toLane="1" via=":intersection_16_1" tl="J5" linkIndex="5" dir="s" state="o"/>
+    <connection from="n_s_03" to="n_s_04" fromLane="0" toLane="0" via=":secondary_merge_1_2_0" dir="s" state="M"/>
+    <connection from="n_s_03" to="n_s_04" fromLane="1" toLane="1" via=":secondary_merge_1_2_1" dir="s" state="M"/>
+    <connection from="n_w" to="e_w_04" fromLane="0" toLane="1" via=":italia_merge_2_0_0" dir="s" state="m"/>
+    <connection from="n_w" to="e_w_04" fromLane="1" toLane="2" via=":italia_merge_2_0_1" dir="s" state="m"/>
+    <connection from="s_e" to="w_e_04" fromLane="0" toLane="1" via=":italia_merge_1_0_0" dir="r" state="m"/>
+    <connection from="s_e" to="w_e_04" fromLane="1" toLane="2" via=":italia_merge_1_0_1" dir="r" state="m"/>
+    <connection from="s_n_01" to="s_e" fromLane="0" toLane="0" via=":secondary_turn_2_0_0" dir="R" state="M"/>
+    <connection from="s_n_01" to="s_e" fromLane="0" toLane="1" via=":secondary_turn_2_0_1" dir="R" state="M"/>
+    <connection from="s_n_01" to="s_n_02" fromLane="0" toLane="0" via=":secondary_turn_2_2_0" dir="s" state="M"/>
+    <connection from="s_n_01" to="s_n_02" fromLane="1" toLane="1" via=":secondary_turn_2_2_1" dir="s" state="M"/>
+    <connection from="s_n_02" to="s_n_03" fromLane="0" toLane="0" via=":intersection_7_0" tl="J5" linkIndex="2" dir="s" state="o"/>
+    <connection from="s_n_02" to="s_n_03" fromLane="1" toLane="1" via=":intersection_7_1" tl="J5" linkIndex="2" dir="s" state="o"/>
+    <connection from="s_n_03" to="s_n_04" fromLane="0" toLane="0" via=":secondary_merge_2_2_0" dir="s" state="m"/>
+    <connection from="s_n_03" to="s_n_04" fromLane="1" toLane="1" via=":secondary_merge_2_2_1" dir="s" state="m"/>
+    <connection from="w_e_01" to="w_s" fromLane="0" toLane="0" via=":italia_merge_split_1_0_0" dir="R" state="m"/>
+    <connection from="w_e_01" to="w_e_02" fromLane="0" toLane="0" via=":italia_merge_split_1_1_0" dir="s" state="m"/>
+    <connection from="w_e_01" to="w_s" fromLane="1" toLane="1" via=":italia_merge_split_1_2_0" dir="R" state="m"/>
+    <connection from="w_e_01" to="w_e_02" fromLane="1" toLane="1" via=":italia_merge_split_1_3_0" dir="s" state="m"/>
+    <connection from="w_e_01" to="w_e_02" fromLane="1" toLane="3" via=":italia_merge_split_1_3_1" dir="s" state="m"/>
+    <connection from="w_e_01" to="w_e_02" fromLane="2" toLane="2" via=":italia_merge_split_1_3_2" dir="s" state="m"/>
+    <connection from="w_e_01" to="w_e_02" fromLane="2" toLane="4" via=":italia_merge_split_1_3_3" dir="s" state="m"/>
+    <connection from="w_e_02" to="w_e_03" fromLane="0" toLane="0" via=":intersection_9_0" tl="J5" linkIndex="3" dir="s" state="o"/>
+    <connection from="w_e_02" to="w_e_03" fromLane="1" toLane="1" via=":intersection_9_1" tl="J5" linkIndex="3" dir="s" state="o"/>
+    <connection from="w_e_02" to="w_e_03" fromLane="2" toLane="2" via=":intersection_9_2" tl="J5" linkIndex="3" dir="s" state="o"/>
+    <connection from="w_e_02" to="s_n_03" fromLane="3" toLane="0" via=":intersection_12_0" tl="J5" linkIndex="4" dir="l" state="o"/>
+    <connection from="w_e_02" to="e_w_03" fromLane="3" toLane="1" via=":intersection_13_0" tl="J5" linkIndex="4" dir="t" state="o"/>
+    <connection from="w_e_02" to="s_n_03" fromLane="4" toLane="1" via=":intersection_14_0" tl="J5" linkIndex="4" dir="l" state="o"/>
+    <connection from="w_e_02" to="e_w_03" fromLane="4" toLane="2" via=":intersection_15_0" tl="J5" linkIndex="4" dir="t" state="o"/>
+    <connection from="w_e_03" to="w_e_04" fromLane="0" toLane="0" via=":italia_merge_1_2_0" dir="s" state="M"/>
+    <connection from="w_e_03" to="w_e_04" fromLane="1" toLane="1" via=":italia_merge_1_2_1" dir="s" state="M"/>
+    <connection from="w_e_03" to="w_e_04" fromLane="2" toLane="2" via=":italia_merge_1_2_2" dir="s" state="M"/>
+    <connection from="w_e_04" to="w_e_05" fromLane="0" toLane="0" via=":italia_split_1_0_0" dir="s" state="M"/>
+    <connection from="w_e_04" to="w_e_05" fromLane="1" toLane="1" via=":italia_split_1_0_1" dir="s" state="M"/>
+    <connection from="w_e_04" to="w_e_05" fromLane="2" toLane="2" via=":italia_split_1_0_2" dir="s" state="M"/>
+    <connection from="w_e_04" to="w_w" fromLane="2" toLane="0" via=":italia_split_1_3_0" dir="l" state="M"/>
+    <connection from="w_s" to="n_s_04" fromLane="0" toLane="0" via=":secondary_merge_1_0_0" dir="s" state="m"/>
+    <connection from="w_s" to="n_s_04" fromLane="1" toLane="1" via=":secondary_merge_1_0_1" dir="s" state="m"/>
+    <connection from="w_w" to="e_n" fromLane="0" toLane="0" via=":italia_merge_split_2_7_0" dir="s" state="m"/>
+    <connection from="w_w" to="e_n" fromLane="0" toLane="1" via=":italia_merge_split_2_7_1" dir="s" state="m"/>
+    <connection from="w_w" to="e_w_02" fromLane="0" toLane="2" via=":italia_merge_split_2_9_0" dir="l" state="m"/>
+    <connection from="w_w" to="e_w_02" fromLane="0" toLane="3" via=":italia_merge_split_2_9_1" dir="l" state="m"/>
+    <connection from="w_w" to="e_w_02" fromLane="0" toLane="4" via=":italia_merge_split_2_9_2" dir="l" state="m"/>
+
+    <connection from=":intersection_0" to="e_w_03" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":intersection_0" to="e_w_03" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":intersection_0" to="e_w_03" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":intersection_3" to="n_s_03" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":intersection_4" to="w_e_03" fromLane="0" toLane="1" dir="t" state="M"/>
+    <connection from=":intersection_5" to="n_s_03" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":intersection_6" to="w_e_03" fromLane="0" toLane="2" dir="t" state="M"/>
+    <connection from=":intersection_7" to="s_n_03" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":intersection_7" to="s_n_03" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":intersection_9" to="w_e_03" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":intersection_9" to="w_e_03" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":intersection_9" to="w_e_03" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":intersection_12" to="s_n_03" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":intersection_13" to="e_w_03" fromLane="0" toLane="1" dir="t" state="M"/>
+    <connection from=":intersection_14" to="s_n_03" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":intersection_15" to="e_w_03" fromLane="0" toLane="2" dir="t" state="M"/>
+    <connection from=":intersection_16" to="n_s_03" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":intersection_16" to="n_s_03" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":italia_merge_1_0" to="w_e_04" fromLane="0" toLane="1" dir="r" state="M"/>
+    <connection from=":italia_merge_1_0" to="w_e_04" fromLane="1" toLane="2" dir="r" state="M"/>
+    <connection from=":italia_merge_1_2" to="w_e_04" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":italia_merge_1_2" to="w_e_04" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":italia_merge_1_2" to="w_e_04" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":italia_merge_2_0" to="e_w_04" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":italia_merge_2_0" to="e_w_04" fromLane="1" toLane="2" dir="s" state="M"/>
+    <connection from=":italia_merge_2_2" to="e_w_04" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":italia_merge_2_2" to="e_w_04" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":italia_merge_2_2" to="e_w_04" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":italia_merge_split_1_0" to="w_s" fromLane="0" toLane="0" dir="R" state="M"/>
+    <connection from=":italia_merge_split_1_1" to="w_e_02" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":italia_merge_split_1_2" to="w_s" fromLane="0" toLane="1" dir="R" state="M"/>
+    <connection from=":italia_merge_split_1_3" to="w_e_02" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":italia_merge_split_1_3" to="w_e_02" fromLane="1" toLane="3" dir="s" state="M"/>
+    <connection from=":italia_merge_split_1_3" to="w_e_02" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":italia_merge_split_1_3" to="w_e_02" fromLane="3" toLane="4" dir="s" state="M"/>
+    <connection from=":italia_merge_split_1_7" to="w_s" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":italia_merge_split_1_8" to="w_e_02" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":italia_merge_split_1_8" to="w_e_02" fromLane="1" toLane="3" dir="l" state="M"/>
+    <connection from=":italia_merge_split_1_8" to="w_e_02" fromLane="2" toLane="4" dir="l" state="M"/>
+    <connection from=":italia_merge_split_2_0" to="e_n" fromLane="0" toLane="0" dir="R" state="M"/>
+    <connection from=":italia_merge_split_2_1" to="e_w_02" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":italia_merge_split_2_2" to="e_n" fromLane="0" toLane="1" via=":italia_merge_split_2_12_0" dir="R" state="m"/>
+    <connection from=":italia_merge_split_2_12" to="e_n" fromLane="0" toLane="1" dir="R" state="M"/>
+    <connection from=":italia_merge_split_2_3" to="e_w_02" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":italia_merge_split_2_3" to="e_w_02" fromLane="1" toLane="3" dir="s" state="M"/>
+    <connection from=":italia_merge_split_2_3" to="e_w_02" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":italia_merge_split_2_3" to="e_w_02" fromLane="3" toLane="4" dir="s" state="M"/>
+    <connection from=":italia_merge_split_2_7" to="e_n" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":italia_merge_split_2_7" to="e_n" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":italia_merge_split_2_9" to="e_w_02" fromLane="0" toLane="2" dir="l" state="M"/>
+    <connection from=":italia_merge_split_2_9" to="e_w_02" fromLane="1" toLane="3" dir="l" state="M"/>
+    <connection from=":italia_merge_split_2_9" to="e_w_02" fromLane="2" toLane="4" dir="l" state="M"/>
+    <connection from=":italia_split_1_0" to="w_e_05" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":italia_split_1_0" to="w_e_05" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":italia_split_1_0" to="w_e_05" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":italia_split_1_3" to="w_w" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":italia_split_2_0" to="e_w_05" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":italia_split_2_0" to="e_w_05" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":italia_split_2_0" to="e_w_05" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":italia_split_2_3" to="e_e" fromLane="0" toLane="0" dir="L" state="M"/>
+    <connection from=":secondary_merge_1_0" to="n_s_04" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":secondary_merge_1_0" to="n_s_04" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":secondary_merge_1_2" to="n_s_04" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":secondary_merge_1_2" to="n_s_04" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":secondary_merge_2_0" to="s_n_04" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":secondary_merge_2_0" to="s_n_04" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":secondary_merge_2_2" to="s_n_04" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":secondary_merge_2_2" to="s_n_04" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":secondary_turn_1_0" to="n_w" fromLane="0" toLane="0" dir="R" state="M"/>
+    <connection from=":secondary_turn_1_0" to="n_w" fromLane="1" toLane="1" dir="R" state="M"/>
+    <connection from=":secondary_turn_1_2" to="n_s_02" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":secondary_turn_1_2" to="n_s_02" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":secondary_turn_2_0" to="s_e" fromLane="0" toLane="0" dir="R" state="M"/>
+    <connection from=":secondary_turn_2_0" to="s_e" fromLane="1" toLane="1" dir="R" state="M"/>
+    <connection from=":secondary_turn_2_2" to="s_n_02" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":secondary_turn_2_2" to="s_n_02" fromLane="1" toLane="1" dir="s" state="M"/>
+
+</net>
