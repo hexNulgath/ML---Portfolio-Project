@@ -1,4 +1,4 @@
-name: colab_local
+name: moveit
 channels:
   - defaults
 dependencies:
@@ -148,4 +148,4 @@ dependencies:
       - webencodings==0.5.1
       - websocket-client==1.9.0
       - widgetsnbextension==4.0.15
-prefix: /root/miniconda3/envs/colab_local
+prefix: /root/miniconda3/envs/moveit
