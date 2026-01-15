@@ -40,7 +40,7 @@ cd MOVEIT
 pip install -r requirements.txt
 ```
 
-Alternatively, a preconfigured Conda environment is provided:
+Alternatively, a pre-configured Conda environment is provided:
 ```bash
 conda env create -f environment.yml
 conda activate moveit
@@ -75,7 +75,7 @@ In the second week, reinforcement learning–based traffic signal controllers wi
 
 ### Week 3 – Training, Hyperparameter Tuning, and Comparative Evaluation
 
-The third week will focus on extended training and systematic evaluation of the SARSA and DDQN controllers. Hyperparameters will be tuned to improve convergence and performance. Both learning-based approaches will be quantitatively compared against the static baseline using unseen traffic scenarios. Performance will be assessed using standard traffic efficiency metrics, enabling analysis of learning speed, control effectiveness, and computational complexity.
+The third week will focus on extended training and systematic evaluation of the SARSA and DDQN controllers. Hyperparameter will be tuned to improve convergence and performance. Both learning-based approaches will be quantitatively compared against the static baseline using unseen traffic scenarios. Performance will be assessed using standard traffic efficiency metrics, enabling analysis of learning speed, control effectiveness, and computational complexity.
 
 ### Week 4 – Adversarial Traffic Scenarios, Visualization, and Reporting
 
