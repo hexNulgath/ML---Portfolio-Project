@@ -50,7 +50,7 @@ conda activate moveit
 
 Training and evaluation are executed through the provided notebooks in the `notebooks/` directory.
 
-The setup cell must always be run first, as it initializes the environment and is required for all subsequent code blocks.
+The first cell under Simulation RL sets the variables across the simulation and training of the models. To run a training it is needed to set each variable including the first for setting the chosen model and run the full code underneath.
 
 All reinforcement learning models share the same core pipeline for:
 
@@ -63,7 +63,7 @@ All reinforcement learning models share the same core pipeline for:
 - base network creation.
 
 Only the execution flow differs between models.
-To run an experiment, execute the global setup block and then run only the block corresponding to the model you wish to train or evaluate.
+To run an experiment, set up the global variables and execute the whole code block.
 
 ## Methodology
 ### Simulation Environment
