@@ -16,7 +16,7 @@ Building on this context, MOVEIT provides a controlled simulation environment fo
 
 ```text
 MOVEIT/
-├── notebooks/ # Colab/Jupyter notebooks for analysis
+├── notebooks/ # Colab/Jupyter notebooks for running code
 ├── data/ # Raw and processed traffic data
 ├── SUMO_config/ # SUMO configuration files
 ├── results/ # Training outputs and generated plots
@@ -48,7 +48,22 @@ conda activate moveit
 
 ### Running the Simulation
 
-Training and evaluation can be executed via the provided notebooks in notebooks/ or by running the corresponding Python scripts.
+Training and evaluation are executed through the provided notebooks in the `notebooks/` directory.
+
+The setup cell must always be run first, as it initializes the environment and is required for all subsequent code blocks.
+
+All reinforcement learning models share the same core pipeline for:
+
+- environment initialization,
+
+- reward computation,
+
+- state construction, and
+
+- base network creation.
+
+Only the execution flow differs between models.
+To run an experiment, execute the global setup block and then run only the block corresponding to the model you wish to train or evaluate.
 
 ## Methodology
 ### Simulation Environment
