@@ -46,6 +46,18 @@ conda env create -f environment.yml
 conda activate moveit
 ```
 
+### Data
+> **Important:** To run the preprocessing and generate a new simulation file, you must download the raw data files listed below. In the first notebook cell, set `INPUT_CSV_PATH` to the file location, and assign `CSV_SPEED` and `CSV_VOLUME` to the corresponding filenames provided in the **Full Raw Data** section below.
+
+- **Sample Data**: Small, processed files (`data/processed/`) are included for quick testing.
+- **Full Raw Data**: Larger files must be downloaded separately.
+    - **Source 1 (Speed)**: [Montevideo Average Speed Dataset](https://catalogodatos.gub.uy/dataset/velocidad-promedio-vehicular-en-las-principales-avenidas-de-montevideo)
+    - **Source 2 (Volume)**: [Montevideo Vehicle Count Dataset](https://catalogodatos.gub.uy/dataset/conteo-vehicular-en-las-principales-avenidas-de-montevideo)
+    - **Mirror (Convenience)**: [Google Drive Folder](https://drive.google.com/drive/folders/1cmOe9EN5kP0R22WODEO5KsUUtc-VuvLG?usp=drive_link) containing pre-selected files for this project.
+- **Usage**: After downloading, place the required `.csv` files in the `data/raw/` directory and update the file path variable in the first cell of the notebook.
+- **License**: Data is provided under the terms specified by "Catálogo Nacional de Datos Abiertos".
+
+
 ### Running the Simulation
 
 Training and evaluation are executed through the provided notebooks in the `notebooks/` directory.
@@ -95,16 +107,6 @@ The third week will focus on extended training and systematic evaluation of the 
 ### Week 4 – Adversarial Traffic Scenarios, Visualization, and Reporting
 
 In the final week, adversarial traffic scenarios will be introduced to evaluate the robustness of each control strategy. These scenarios will simulate atypical or disruptive conditions—such as sudden traffic surges, lane blockages, or sensor noise—without retraining the models. Visualization tools and summary plots will be refined to enable clear, side-by-side comparison of fixed-time control, SARSA, and DDQN under both normal and stressed conditions. The final results will be analyzed and documented, highlighting trade-offs between efficiency, robustness, and model complexity, as well as outlining directions for future work.
-
-## Data
-- **Sample Data**: Small, processed files (`data/processed/`) are included for quick testing.
-- **Full Raw Data**: Larger files must be downloaded separately.
-    - **Source 1 (Speed)**: [Montevideo Average Speed Dataset](https://catalogodatos.gub.uy/dataset/velocidad-promedio-vehicular-en-las-principales-avenidas-de-montevideo)
-    - **Source 2 (Volume)**: [Montevideo Vehicle Count Dataset](https://catalogodatos.gub.uy/dataset/conteo-vehicular-en-las-principales-avenidas-de-montevideo)
-    - **Mirror (Convenience)**: [Google Drive Folder](https://drive.google.com/drive/folders/1cmOe9EN5kP0R22WODEO5KsUUtc-VuvLG?usp=drive_link) containing pre-selected files for this project.
-- **Usage**: After downloading, place the required `.csv` files in the `data/raw/` directory and update the file path variable in the first cell of the notebook.
-- **License**: Data is provided under the terms specified by "Catálogo Nacional de Datos Abiertos".
-
 
 ## Ethics & Safety
 
