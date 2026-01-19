@@ -1,6 +1,6 @@
 # MOVEIT: Montevideo Optimized Vehicular Efficiency via Intelligent Traffic
 
-**Author**: Ignacio Machado | Cohort 24  
+**Author**: Ignacio Machado | Cohort 24 Holberton School
 **Tags**: Reinforcement Learning, SUMO, Traffic Simulation, DDQN, SARSA, Urban Mobility
 
 ## Overview
@@ -16,7 +16,7 @@ Building on this context, MOVEIT provides a controlled simulation environment fo
 
 ```text
 MOVEIT/
-├── notebooks/ # Colab/Jupyter notebooks for analysis
+├── notebooks/ # Colab/Jupyter notebooks for running code
 ├── data/ # Raw and processed traffic data
 ├── SUMO_config/ # SUMO configuration files
 ├── results/ # Training outputs and generated plots
@@ -29,26 +29,80 @@ MOVEIT/
 ### Requirements
 - Python 3.9+
 - SUMO (Simulation of Urban Mobility)
-- Conda or virtualenv recommended
+- Conda or virtualenv (optional, recommended)
+
+If you do not have Python 3.9 installed, download it from:
+https://www.python.org/downloads/release/python-390/
+
+If you use Conda, create a Python 3.9 environment:
+
+```bash
+conda create -n moveit python=3.9
+conda activate moveit
+```
+
+### SUMO Installation
+
+This project requires **SUMO ≥ 1.19**.
+
+- **Windows & macOS:**  
+  Download from the official site:  
+  https://www.eclipse.org/sumo/
+
+- **Linux (Ubuntu/Debian):**
+```bash
+  sudo apt install sumo sumo-tools sumo-doc
+```
 
 ### Setup
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/MOVEIT.git
-cd MOVEIT
-pip install -r requirements.txt
+git clone https://github.com/hexNulgath/ML---Portfolio-Project
+cd ML---Portfolio-Project
 ```
 
-Alternatively, a preconfigured Conda environment is provided:
+Alternatively, a pre-configured Conda environment is provided:
 ```bash
 conda env create -f environment.yml
 conda activate moveit
 ```
 
+or install the required modules:
+```bash
+pip install -r requirements.txt
+```
+
+### Data
+> **Important:** To run the preprocessing and generate a new simulation file, you must download the raw data files listed below. In the first notebook cell, set `INPUT_CSV_PATH` to the file location, and assign `CSV_SPEED` and `CSV_VOLUME` to the corresponding filenames provided in the **Full Raw Data** section below.
+
+- **Sample Data**: Small, processed files (`data/processed/`) are included for quick testing.
+- **Full Raw Data**: Larger files must be downloaded separately.
+    - **Source 1 (Speed)**: [Montevideo Average Speed Dataset](https://catalogodatos.gub.uy/dataset/velocidad-promedio-vehicular-en-las-principales-avenidas-de-montevideo)
+    - **Source 2 (Volume)**: [Montevideo Vehicle Count Dataset](https://catalogodatos.gub.uy/dataset/conteo-vehicular-en-las-principales-avenidas-de-montevideo)
+    - **Mirror (Convenience)**: [Google Drive Folder](https://drive.google.com/drive/folders/1cmOe9EN5kP0R22WODEO5KsUUtc-VuvLG?usp=drive_link) containing pre-selected files for this project.
+- **Usage**: After downloading, place the required `.csv` files in the `data/raw/` directory and update the file path variable in the first cell of the notebook.
+- **License**: Data is provided under the terms specified by "Catálogo Nacional de Datos Abiertos".
+
+
 ### Running the Simulation
 
-Training and evaluation can be executed via the provided notebooks in notebooks/ or by running the corresponding Python scripts.
+Training and evaluation are executed through the provided notebooks in the `notebooks/` directory.
+
+The first cell under Simulation RL sets the variables across the simulation and training of the models. To run a training it is necessary to set each variable including the first for setting the chosen model and run the full code underneath.
+
+All reinforcement learning models share the same core pipeline for:
+
+- environment initialization,
+
+- reward computation,
+
+- state construction, and
+
+- base network creation.
+
+Only the execution flow differs between models.
+To run an experiment, set up the global variables and execute the whole code block.
 
 ## Methodology
 ### Simulation Environment
@@ -73,23 +127,13 @@ During the first week, the selected traffic intersection(s) will be recreated wi
 
 In the second week, reinforcement learning–based traffic signal controllers will be designed and integrated into the simulation environment. A common state representation, action space, and reward function will be defined to ensure fair comparison across methods. A tabular SARSA agent and a Double Deep Q-Network (DDQN) agent will be implemented and trained under normal traffic conditions. Initial experiments will validate learning stability and correct agent–environment interaction, with preliminary comparisons against the fixed-time baseline.
 
-### Week 3 – Training, Hyperparameter Tuning, and Comparative Evaluation
+### Week 3 – Training, Hyperparameters Tuning, and Comparative Evaluation
 
 The third week will focus on extended training and systematic evaluation of the SARSA and DDQN controllers. Hyperparameters will be tuned to improve convergence and performance. Both learning-based approaches will be quantitatively compared against the static baseline using unseen traffic scenarios. Performance will be assessed using standard traffic efficiency metrics, enabling analysis of learning speed, control effectiveness, and computational complexity.
 
 ### Week 4 – Adversarial Traffic Scenarios, Visualization, and Reporting
 
 In the final week, adversarial traffic scenarios will be introduced to evaluate the robustness of each control strategy. These scenarios will simulate atypical or disruptive conditions—such as sudden traffic surges, lane blockages, or sensor noise—without retraining the models. Visualization tools and summary plots will be refined to enable clear, side-by-side comparison of fixed-time control, SARSA, and DDQN under both normal and stressed conditions. The final results will be analyzed and documented, highlighting trade-offs between efficiency, robustness, and model complexity, as well as outlining directions for future work.
-
-## Data
-- **Sample Data**: Small, processed files (`data/processed/`) are included for quick testing.
-- **Full Raw Data**: Larger files must be downloaded separately.
-    - **Source 1 (Speed)**: [Montevideo Average Speed Dataset](https://catalogodatos.gub.uy/dataset/velocidad-promedio-vehicular-en-las-principales-avenidas-de-montevideo)
-    - **Source 2 (Volume)**: [Montevideo Vehicle Count Dataset](https://catalogodatos.gub.uy/dataset/conteo-vehicular-en-las-principales-avenidas-de-montevideo)
-    - **Mirror (Convenience)**: [Google Drive Folder](https://drive.google.com/drive/folders/1cmOe9EN5kP0R22WODEO5KsUUtc-VuvLG?usp=drive_link) containing pre-selected files for this project.
-- **Usage**: After downloading, place the required `.csv` files in the `data/raw/` directory and update the file path variable in the first cell of the notebook.
-- **License**: Data is provided under the terms specified by "Catálogo Nacional de Datos Abiertos".
-
 
 ## Ethics & Safety
 
@@ -99,6 +143,6 @@ This project is intended as a simulation-based evaluation and research tool and 
 
 However, despite being developed and evaluated within a simulated environment, the system is designed to model real-world traffic behavior. This introduces important ethical and safety considerations, as any traffic signal control system directly impacts driver safety. Consequently, the correctness and reliability of the model’s behavior take precedence over purely optimizing performance metrics such as waiting time or throughput.
 
-Several critical safety constraints must be explicitly enforced. The traffic light controller is explicitly constrained to never never allow conflicting traffic movements that could lead to collisions, and all signal transitions must follow established traffic regulations. In particular, transitions from green to red are required to include a yellow phase, whose duration is carefully defined based on vehicle speeds, driver reaction times, and braking distances. This ensures that drivers have sufficient time to perceive the signal change and safely come to a stop.
+Several critical safety constraints must be explicitly enforced. The traffic light controller is explicitly constrained to never allow conflicting traffic movements that could lead to collisions, and all signal transitions must follow established traffic regulations. In particular, transitions from green to red are required to include a yellow phase, whose duration is carefully defined based on vehicle speeds, driver reaction times, and braking distances. This ensures that drivers have sufficient time to perceive the signal change and safely come to a stop.
 
 These safety constraints are treated as hard requirements rather than optimization objectives, meaning they cannot be violated by the learning agent, even if doing so would improve traffic efficiency. By prioritizing safety, regulatory compliance, and predictable behavior, the project aims to ensure that the resulting system is fair, responsible, and suitable for future real-world consideration.
