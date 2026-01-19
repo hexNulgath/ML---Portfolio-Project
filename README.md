@@ -50,9 +50,9 @@ This project requires **SUMO ≥ 1.19**.
   https://www.eclipse.org/sumo/
 
 - **Linux (Ubuntu/Debian):**
-  ```bash
+```bash
   sudo apt install sumo sumo-tools sumo-doc
-
+```
 
 ### Setup
 Clone the repository and install dependencies:
@@ -62,7 +62,7 @@ git clone https://github.com/hexNulgath/ML---Portfolio-Project
 cd ML---Portfolio-Project
 ```
 
-optionally, a pre-configured Conda environment is provided:
+Alternatively, a pre-configured Conda environment is provided:
 ```bash
 conda env create -f environment.yml
 conda activate moveit
@@ -89,7 +89,7 @@ pip install -r requirements.txt
 
 Training and evaluation are executed through the provided notebooks in the `notebooks/` directory.
 
-The first cell under Simulation RL sets the variables across the simulation and training of the models. To run a training it is needed to set each variable including the first for setting the chosen model and run the full code underneath.
+The first cell under Simulation RL sets the variables across the simulation and training of the models. To run a training it is necessary to set each variable including the first for setting the chosen model and run the full code underneath.
 
 All reinforcement learning models share the same core pipeline for:
 
@@ -127,9 +127,9 @@ During the first week, the selected traffic intersection(s) will be recreated wi
 
 In the second week, reinforcement learning–based traffic signal controllers will be designed and integrated into the simulation environment. A common state representation, action space, and reward function will be defined to ensure fair comparison across methods. A tabular SARSA agent and a Double Deep Q-Network (DDQN) agent will be implemented and trained under normal traffic conditions. Initial experiments will validate learning stability and correct agent–environment interaction, with preliminary comparisons against the fixed-time baseline.
 
-### Week 3 – Training, Hyperparameter Tuning, and Comparative Evaluation
+### Week 3 – Training, Hyperparameters Tuning, and Comparative Evaluation
 
-The third week will focus on extended training and systematic evaluation of the SARSA and DDQN controllers. Hyperparameter will be tuned to improve convergence and performance. Both learning-based approaches will be quantitatively compared against the static baseline using unseen traffic scenarios. Performance will be assessed using standard traffic efficiency metrics, enabling analysis of learning speed, control effectiveness, and computational complexity.
+The third week will focus on extended training and systematic evaluation of the SARSA and DDQN controllers. Hyperparameters will be tuned to improve convergence and performance. Both learning-based approaches will be quantitatively compared against the static baseline using unseen traffic scenarios. Performance will be assessed using standard traffic efficiency metrics, enabling analysis of learning speed, control effectiveness, and computational complexity.
 
 ### Week 4 – Adversarial Traffic Scenarios, Visualization, and Reporting
 
