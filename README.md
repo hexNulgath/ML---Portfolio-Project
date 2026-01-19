@@ -1,6 +1,6 @@
 # MOVEIT: Montevideo Optimized Vehicular Efficiency via Intelligent Traffic
 
-**Author**: Ignacio Machado | Cohort 24  
+**Author**: Ignacio Machado | Cohort 24 Holberton School
 **Tags**: Reinforcement Learning, SUMO, Traffic Simulation, DDQN, SARSA, Urban Mobility
 
 ## Overview
@@ -29,21 +29,48 @@ MOVEIT/
 ### Requirements
 - Python 3.9+
 - SUMO (Simulation of Urban Mobility)
-- Conda or virtualenv recommended
+- Conda or virtualenv (optional, recommended)
+
+If you do not have Python 3.9 installed, download it from:
+https://www.python.org/downloads/release/python-390/
+
+If you use Conda, create a Python 3.9 environment:
+
+```bash
+conda create -n moveit python=3.9
+conda activate moveit
+```
+
+### SUMO Installation
+
+This project requires **SUMO ≥ 1.19**.
+
+- **Windows & macOS:**  
+  Download from the official site:  
+  https://www.eclipse.org/sumo/
+
+- **Linux (Ubuntu/Debian):**
+  ```bash
+  sudo apt install sumo sumo-tools sumo-doc
+
 
 ### Setup
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/MOVEIT.git
-cd MOVEIT
-pip install -r requirements.txt
+git clone https://github.com/hexNulgath/ML---Portfolio-Project
+cd ML---Portfolio-Project
 ```
 
-Alternatively, a pre-configured Conda environment is provided:
+optionally, a pre-configured Conda environment is provided:
 ```bash
 conda env create -f environment.yml
 conda activate moveit
+```
+
+or install the required modules:
+```bash
+pip install -r requirements.txt
 ```
 
 ### Data
