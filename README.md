@@ -89,7 +89,7 @@ pip install -r requirements.txt
 
 Training and evaluation are executed through the provided notebooks in the `notebooks/` directory.
 
-The first cell under Simulation RL sets the variables across the simulation and training of the models. To run a training it is necessary to set each variable including the first for setting the chosen model and run the full code underneath.
+The first cell under Simulation RL defines the global variables used across the simulation and training process. To run a training experiment, it is necessary to set each variable including the first for setting the chosen model and run the full code underneath.
 
 All reinforcement learning models share the same core pipeline for:
 
@@ -108,32 +108,73 @@ To run an experiment, set up the global variables and execute the whole code blo
 ### Simulation Environment
 In this project, selected intersections in Montevideo are recreated within a SUMO (Simulation of Urban Mobility) environment, accurately reflecting the geometry and layout of their real-world counterparts. Traffic conditions are simulated using real or representative data from different times of day and demand levels, creating realistic scenarios for training and evaluation.
 ### Traffic Signal Control Strategies
-From the user’s perspective, the system presents a visual, interactive simulation of each intersection, where vehicles move through lanes in real time and traffic lights change dynamically. Users can observe animated vehicle flows, queue formation, and signal phase transitions directly within the simulation. Alongside the animation, the interface displays quantitative performance metrics such as average waiting time, queue length, vehicle throughput, stop frequency, and estimated emissions over time.
-Multiple traffic signal control strategies can be evaluated within the same environment. These include a static traffic light controller representing the current fixed-time approach, as well as several adaptive reinforcement learning–based controllers. Different model architectures (such as DDQN, and adversarial approaches) and parameter configurations can be trained and tested under identical traffic scenarios. This allows users to observe how distinct learning strategies adapt signal timing in response to changing traffic demand and disturbances.
+From the user’s perspective, the simulation can be visualized through the SUMO graphical interface, allowing users to observe vehicle flows, queue formation, and signal phase transitions in real time. Alongside the animation, the interface displays quantitative performance metrics such as average waiting time, queue length, vehicle throughput, stop frequency, and estimated emissions over time.
+Multiple traffic signal control strategies can be evaluated within the same environment. These include a static traffic light controller representing the current fixed-time approach, as well as several adaptive reinforcement learning–based controllers. Different model architectures (such as DDQN and SARSA) and stress testing scenarios can be trained and tested under identical traffic scenarios. This allows users to observe how distinct learning strategies adapt signal timing in response to changing traffic demand and disturbances.
 ### Evaluation Framework
 To validate performance, the system supports side-by-side comparisons across static control and multiple adaptive models. Performance graphs and summary statistics highlight differences in key indicators such as average travel time, congestion levels, queue stability, and robustness under varying demand patterns. This comparative framework enables a systematic assessment of which models and parameter settings provide the most effective and reliable traffic optimization.
 After training, users can input custom traffic scenarios and immediately visualize the resulting signal behavior and performance metrics for each control strategy. This design enables an intuitive and transparent evaluation of how different adaptive traffic control methods compare not only to static approaches, but also to each other, under consistent and reproducible conditions.
 
 ## Results
-TBD
+
+The performance of the traffic signal controllers was evaluated under a fixed-demand scenario using four key metrics: cumulative reward, mean queue length, mean waiting time, and spillback frequency. Three main controllers were compared: a static fixed-time controller, a SARSA-based adaptive controller, and a Double Deep Q-Network (DDQN) controller.
+
+### Static Baseline
+The static traffic light controller represents a non-adaptive fixed-cycle policy. Its performance was:
+
+- Reward: −2497  
+- Mean queue length: 3.49 vehicles  
+- Mean waiting time: 3.55 seconds  
+- Spillback frequency: 15 occurrences  
+
+Although the static controller achieved relatively low waiting times, it produced the highest queue accumulation and spillback frequency, indicating poor global congestion management and lack of responsiveness to traffic fluctuations.
+
+### Best SARSA Configuration (SARSA-13)
+The best SARSA model achieved:
+
+- Reward: −1481  
+- Mean queue length: 1.87 vehicles  
+- Mean waiting time: 1.63 seconds  
+- Spillback frequency: 9 occurrences  
+
+This configuration provided the strongest overall performance, with minimal waiting time, low queue accumulation, and significantly reduced spillback events. SARSA demonstrated stable convergence and consistent improvement across training iterations.
+
+### Best DDQN Configuration (DDQN-06)
+The best DDQN model achieved:
+
+- Reward: −1570  
+- Mean queue length: 2.41 vehicles  
+- Mean waiting time: 5.12 seconds  
+- Spillback frequency: 9 occurrences  
+
+DDQN achieved strong global congestion control and low spillback frequency, outperforming the static baseline and approaching SARSA performance. However, DDQN exhibited higher sensitivity to hyperparameter tuning and required careful regularization to avoid policy degradation.
+
+### Comparative Summary
+
+| Controller | Reward | Mean Queue | Mean Wait | Spillback |
+|------------|--------|------------|-----------|-----------|
+| Static     | −2497  | 3.49       | 3.55      | 15        |
+| SARSA-13   | −1481  | 1.87       | 1.63      | 9         |
+| DDQN-06    | −1570  | 2.41       | 5.12      | 9         |
+
+Overall, both reinforcement learning approaches significantly outperformed the static controller. SARSA achieved the best overall balance between efficiency and stability, while DDQN demonstrated strong potential but higher sensitivity to training dynamics.
 
 ## Project Timeline
 
 ### Week 1 – Simulation Environment and Baseline Control
 
-During the first week, the selected traffic intersection(s) will be recreated within the SUMO simulation environment, capturing their geometry, lane configuration, and signal phases. A data pipeline will be implemented to inject traffic demand patterns—such as vehicle arrival rates and turning movements—into the simulator. Traffic light performance will then be evaluated using a fixed-time signal controller to establish a baseline. Key performance metrics, including average waiting time, queue length, and throughput, will be recorded for later comparison.
+During the first week, the selected traffic intersection(s) were recreated within the SUMO simulation environment, capturing their geometry, lane configuration, and signal phases. A data pipeline was implemented to inject traffic demand patterns into the simulator, and a fixed-time traffic light controller was evaluated to establish a baseline. Key performance metrics, including average waiting time, queue length, and throughput, were recorded for later comparison.
 
 ### Week 2 – Reinforcement Learning Controllers (SARSA and DDQN)
 
-In the second week, reinforcement learning–based traffic signal controllers will be designed and integrated into the simulation environment. A common state representation, action space, and reward function will be defined to ensure fair comparison across methods. A tabular SARSA agent and a Double Deep Q-Network (DDQN) agent will be implemented and trained under normal traffic conditions. Initial experiments will validate learning stability and correct agent–environment interaction, with preliminary comparisons against the fixed-time baseline.
+In the second week, reinforcement learning–based traffic signal controllers were designed and integrated into the simulation environment. A common state representation, action space, and reward function were defined to ensure fair comparison across methods. A tabular SARSA agent and a Double Deep Q-Network (DDQN) agent were implemented and trained under normal traffic conditions. Initial experiments validated learning stability and correct agent–environment interaction, with preliminary comparisons against the fixed-time baseline.
 
 ### Week 3 – Training, Hyperparameters Tuning, and Comparative Evaluation
 
-The third week will focus on extended training and systematic evaluation of the SARSA and DDQN controllers. Hyperparameters will be tuned to improve convergence and performance. Both learning-based approaches will be quantitatively compared against the static baseline using unseen traffic scenarios. Performance will be assessed using standard traffic efficiency metrics, enabling analysis of learning speed, control effectiveness, and computational complexity.
+The third week focused on extended training and systematic evaluation of the SARSA and DDQN controllers. Hyperparameters were tuned to improve convergence and performance. Both learning-based approaches were quantitatively compared against the static baseline using unseen traffic scenarios. Performance was assessed using standard traffic efficiency metrics, enabling analysis of learning speed, control effectiveness, and computational complexity.
 
-### Week 4 – Adversarial Traffic Scenarios, Visualization, and Reporting
+### Week 4 – stress and high-demand traffic scenarios, Visualization, and Reporting
 
-In the final week, adversarial traffic scenarios will be introduced to evaluate the robustness of each control strategy. These scenarios will simulate atypical or disruptive conditions—such as sudden traffic surges, lane blockages, or sensor noise—without retraining the models. Visualization tools and summary plots will be refined to enable clear, side-by-side comparison of fixed-time control, SARSA, and DDQN under both normal and stressed conditions. The final results will be analyzed and documented, highlighting trade-offs between efficiency, robustness, and model complexity, as well as outlining directions for future work.
+In the final week, stress and high-demand traffic scenarios were introduced to evaluate the robustness of each control strategy. These scenarios simulated atypical or disruptive conditions—such as sudden traffic surges, lane blockages, or sensor noise—without retraining the models. Visualization tools and summary metrics were refined to enable clear, side-by-side comparison of fixed-time control, SARSA, and DDQN under both normal and stressed conditions. The final results were analyzed and documented, highlighting trade-offs between efficiency, robustness, and model complexity.
 
 ## Ethics & Safety
 
