@@ -172,7 +172,7 @@ In the second week, reinforcement learning–based traffic signal controllers we
 
 The third week focused on extended training and systematic evaluation of the SARSA and DDQN controllers. Hyperparameters were tuned to improve convergence and performance. Both learning-based approaches were quantitatively compared against the static baseline using unseen traffic scenarios. Performance was assessed using standard traffic efficiency metrics, enabling analysis of learning speed, control effectiveness, and computational complexity.
 
-### Week 4 – stress and high-demand traffic scenarios, Visualization, and Reporting
+### Week 4 – Stress and High-Demand Traffic Scenarios, Visualization, and Reporting
 
 In the final week, stress and high-demand traffic scenarios were introduced to evaluate the robustness of each control strategy. These scenarios simulated atypical or disruptive conditions—such as sudden traffic surges, lane blockages, or sensor noise—without retraining the models. Visualization tools and summary metrics were refined to enable clear, side-by-side comparison of fixed-time control, SARSA, and DDQN under both normal and stressed conditions. The final results were analyzed and documented, highlighting trade-offs between efficiency, robustness, and model complexity.
 
